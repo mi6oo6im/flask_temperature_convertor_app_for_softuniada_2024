@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-converter</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <header>
+        <h1 id="title-header">Hello, World!</h1>
+        
+        <script>
+            function sayHello(){
+                // Get the element with id 'title-header'
+                var titleHeader = document.getElementById("title-header");
+                
+                // Change the text content of the element
+                if (titleHeader.textContent == "Hello, World!"){
+                    titleHeader.textContent = "Hello, Misho!";
+                } else {
+                    titleHeader.textContent = "Hello, World!";
+                }
+            }
+        </script>
+        <script>
+            function changeNumberCelsius(){
+                // Get the element with id
+                var numberCelsius = document.getElementById("celsius-value");
+                var numberFahrenheit = document.getElementById("fahrenheit-value");
+                var numberKelvin = document.getElementById("kelvin-value");
+                
+                // Change the content of the element
+                numberFahrenheit.value = numberCelsius.value * 2;
+                numberKelvin.value = numberCelsius.value * 2;
+            }
+        </script>
+    </header>
+    <main>
+        <section id="celsius">
+            <h2>Degree Celsius</h2>
+            <form action="">
+                <input id="celsius-value" type="number" value=1>
+            </form>
+            <button id="hello-button" onclick="sayHello()" >ChangeName</button>
+            <button id="celsius-button" onclick="changeNumberCelsius()" >Multiply by 2</button>
+        </section>
+        <section id="fahrenheit">
+            <h2>Degree Fahrenheit</h2>
+            <form action="">
+                <input id="fahrenheit-value" type="number" value=1>
+            </form>
+            <button id="hello-button" onclick="sayHello()" >ChangeName</button>
+            <button id="fahrenheit-button" onclick="changeNumberCelsius()" >Multiply by 2</button>
+        </section>
+        <section id="kelvin">
+            <h2>Kelvin</h2>
+            <form action="">
+                <input id="kelvin-value" type="number" value=1>
+            </form>
+            <button id="hello-button" onclick="sayHello()" >ChangeName</button>
+            <button id="kelvin-button" onclick="changeNumberCelsius()" >Multiply by 2</button>
+        </section>
+    </main>
+</body>
+</html>
