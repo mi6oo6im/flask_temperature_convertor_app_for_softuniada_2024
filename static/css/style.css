@@ -18,3 +18,7 @@ img {
     display: block;
 }
 
+svg {
+    width: 100px;
+    height: auto;
+}
