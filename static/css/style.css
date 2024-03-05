@@ -8,7 +8,7 @@ html {
     font: 15px/1.5 Roboto, sans-serif;
 }
 
-body {
+body, button {
     font: inherit;
 }
 
@@ -21,4 +21,60 @@ img {
 svg {
     width: 50px;
     height: auto;
+}
+
+input {
+    border-color: lightgray;
+    border-radius: 2em;
+    text-align: center;
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 3em;
+    padding-bottom: 1em;
+    color: gray;
+}
+
+button {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 1em;
+    border-radius: 2em;
+    border-color: transparent;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.wrapper {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.footer-text {
+    margin-top: 2em;
+    color: rgb(187, 184, 184);
 }
