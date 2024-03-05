@@ -1,0 +1,81 @@
+/* Ultra-high definition */
+@media (min-width: 2500px) {
+    html {
+        font-size: 20px;
+    }
+
+    svg {
+        width: 120px;
+    }
+
+    h1 {
+        padding: 0;
+    }
+}
+
+/* HD screens */
+@media (max-width: 1440px) {
+    html {
+        font-size: 11px;
+    }
+
+    h1 {
+        padding: 0;
+    }
+
+    svg {
+        width: 50px;
+    }
+}
+
+/* Small laptops */
+@media (max-width: 1000px) {
+    html {
+        font-size: 8px;
+    }
+
+    svg {
+        width: 50px;
+    }
+}
+
+/* Tablets, Phablets */
+@media (max-width: 750px) {
+    html {
+        font-size: 5px;
+    }
+
+    button {
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+    h1, h2 {
+        padding: 0;
+    }
+    
+    svg {
+        width: 30px;
+    }
+}
+
+/* Phones */
+@media (max-width: 450px) {
+    html {
+        font-size: 10px;
+        line-height: 1.1;
+    }
+
+    button {
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+    svg {
+        width: 50px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
