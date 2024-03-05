@@ -32,12 +32,14 @@ input {
     border-radius: 2em;
     text-align: center;
     font-size: 2em;
+    padding: 0.4em 0;
 }
 
 h1 {
     font-size: 5em;
-    padding: 1em;
+    padding: 1em 0;
     color: rgb(84, 81, 81);
+    text-align: center;
 }
 
 h2 {
@@ -73,7 +75,6 @@ section {
 }
 
 .wrapper {
-    padding-top: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
