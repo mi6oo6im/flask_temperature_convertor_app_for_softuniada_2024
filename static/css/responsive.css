@@ -66,6 +66,11 @@
         line-height: 1.1;
     }
 
+    body {
+        background-image: none;
+        background-color: rgb(10, 104, 15);
+    }
+
     button {
         min-width: 100px;
         min-height: 100px;
