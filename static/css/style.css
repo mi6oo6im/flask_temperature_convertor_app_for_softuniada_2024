@@ -8,6 +8,10 @@ html {
     font: 15px/1.5 Roboto, sans-serif;
 }
 
+body {
+    background-image: url('../img/background.jpg');
+}
+
 body, button {
     font: inherit;
 }
@@ -31,9 +35,15 @@ input {
 }
 
 h1 {
-    font-size: 3em;
-    padding-bottom: 1em;
-    color: gray;
+    font-size: 5em;
+    padding: 1em;
+    color: rgb(84, 81, 81);
+}
+
+h2 {
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    color: rgb(84, 81, 81);
 }
 
 button {
@@ -69,6 +79,8 @@ section {
     align-items: center;
     justify-content: space-between;
     gap: 2em;
+    background-color: rgb(256, 256, 256, 0.5);
+    min-height: 100vh;
 }
 
 .buttons {
@@ -79,7 +91,7 @@ section {
 
 .footer-text {
     margin-top: 2em;
-    color: rgb(187, 184, 184);
+    color: rgb(82, 77, 77);
 }
 
 button::after {
