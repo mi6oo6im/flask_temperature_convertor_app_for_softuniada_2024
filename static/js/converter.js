@@ -57,6 +57,11 @@ function changeNumberFromCelsius(){
     let numberKelvin = document.getElementById("kelvin-value");
     
     // Change the content of the element
+    // TODO decimal separator handling , and .
+    // if (numberCelsius.value.includes(',')) {
+    //     console.log('test');
+    //     numberCelsius.value.replace(',','.')
+    // }
     let numericCelsius = Number(numberCelsius.value);
     numberFahrenheit.value = (numericCelsius * (9 / 5) + 32).toFixed(2);
     numberKelvin.value = (numericCelsius + 273.15).toFixed(2);
@@ -65,6 +70,7 @@ function changeNumberFromCelsius(){
 // Convert values from Fahrenheit:
 
 function changeNumberFromFahrenheit(){
+    
     // Get the element with id
     let numberCelsius = document.getElementById("celsius-value");
     let numberFahrenheit = document.getElementById("fahrenheit-value");
@@ -89,3 +95,57 @@ function changeNumberFromKelvin(){
     numberCelsius.value = (numericKelvin - 273.15).toFixed(2);
     numberFahrenheit.value = (numericKelvin * 9/5 - 459.67).toFixed(2);
 }
+
+// Listeners for 'Enter' on input elements:
+// Get the input elements
+let inputElementCelsius = document.getElementById("celsius-value");
+let inputElementFahrenheit = document.getElementById("fahrenheit-value");
+let inputElementKelvin = document.getElementById("kelvin-value");
+
+//listener for celsius input:
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    const element = document.getElementById('celsius-value');
+    if (element) {
+      element.addEventListener('keyup', function(event) {
+        // Check if the pressed key is the Enter key
+        console.log('enter is pressed');
+        if (event.key === 'Enter') {
+            // Call your function here
+            changeNumberFromCelsius();
+        }
+    });
+    }
+});
+
+// Listener for Fahrenheit input:
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    const element = document.getElementById('fahrenheit-value');
+    if (element) {
+      element.addEventListener('keyup', function(event) {
+        // Check if the pressed key is the Enter key
+        console.log('enter is pressed');
+        if (event.key === 'Enter') {
+            // Call your function here
+            changeNumberFromFahrenheit();
+        }
+    });
+    }
+});
+
+// Listener for Kelvin input:
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    const element = document.getElementById('kelvin-value');
+    if (element) {
+      element.addEventListener('keyup', function(event) {
+        // Check if the pressed key is the Enter key
+        console.log('enter is pressed');
+        if (event.key === 'Enter') {
+            // Call your function here
+            changeNumberFromKelvin();
+        }
+    });
+    }
+});
