@@ -58,10 +58,10 @@ function changeNumberFromCelsius(){
     
     // Change the content of the element
     // TODO decimal separator handling , and .
-    // if (numberCelsius.value.includes(',')) {
-    //     console.log('test');
-    //     numberCelsius.value.replace(',','.')
-    // }
+    if (numberCelsius.value.includes(',')) {
+        const newValue = numberCelsius.value.replace(',','.');
+        numberCelsius.value = newValue;
+    }
     let numericCelsius = Number(numberCelsius.value);
     numberFahrenheit.value = (numericCelsius * (9 / 5) + 32).toFixed(2);
     numberKelvin.value = (numericCelsius + 273.15).toFixed(2);
@@ -77,6 +77,10 @@ function changeNumberFromFahrenheit(){
     let numberKelvin = document.getElementById("kelvin-value");
     
     // Change the content of the element
+    if (numberFahrenheit.value.includes(',')) {
+        const newValue = numberFahrenheit.value.replace(',','.');
+        numberFahrenheit.value = newValue;
+    }
     let numericFahrenheit = Number(numberFahrenheit.value);
     numberCelsius.value = ((numericFahrenheit - 32) * (5 / 9)).toFixed(2);
     numberKelvin.value = (((numericFahrenheit  - 32) * (5 / 9)) + 273.15).toFixed(2);
@@ -91,6 +95,10 @@ function changeNumberFromKelvin(){
     let numberKelvin = document.getElementById("kelvin-value");
     
     // Change the content of the element
+    if (numberKelvin.value.includes(',')) {
+        const newValue = numberKelvin.value.replace(',','.');
+        numberKelvin.value = newValue;
+    }
     let numericKelvin = Number(numberKelvin.value);
     numberCelsius.value = (numericKelvin - 273.15).toFixed(2);
     numberFahrenheit.value = (numericKelvin * 9/5 - 459.67).toFixed(2);
