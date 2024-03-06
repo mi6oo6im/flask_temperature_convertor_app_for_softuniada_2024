@@ -11,7 +11,7 @@ function copyCelsiusToClipboard() {
     navigator.clipboard.writeText(copyText.value);
     
     // Alert the copied text
-    alert("Copied value: " + copyText.value);
+    // alert("Copied value: " + copyText.value);
 }
 
 // Copy Fahrenheit value to Clipboard:
@@ -28,7 +28,7 @@ function copyFahrenheitToClipboard() {
     navigator.clipboard.writeText(copyText.value);
     
     // Alert the copied text
-    alert("Copied value: " + copyText.value);
+    // alert("Copied value: " + copyText.value);
 }
 
 // Copy Kelvin value to Clipboard:
@@ -45,7 +45,7 @@ function copyKelvinToClipboard() {
     navigator.clipboard.writeText(copyText.value);
     
     // Alert the copied text
-    alert("Copied value: " + copyText.value);
+    // alert("Copied value: " + copyText.value);
 }
 
 // Convert values from Celsius:
