@@ -42,20 +42,25 @@
 /* Tablets, Phablets */
 @media (max-width: 750px) {
     html {
-        font-size: 5px;
+        font-size: 8px;
+    }
+
+    body {
+        background-image: none;
+        background-color: rgb(10, 104, 15);
     }
 
     button {
-        min-width: 50px;
-        min-height: 50px;
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+    svg {
+        width: 50px;
     }
 
     h1, h2 {
         padding: 0;
-    }
-    
-    svg {
-        width: 30px;
     }
 }
 
