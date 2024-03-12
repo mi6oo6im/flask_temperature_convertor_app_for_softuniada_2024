@@ -6,9 +6,9 @@ This is my first attempt of a Single Page Application (SPA) using Python Flask W
 
 
 ### System Requirements:
-* OS - Windows 7 or newer, Mac OS, Ubunto, Linux
+* OS - Windows 10 or newer, Mac OS, Ubunto, Linux
 * IDE - Visual Studio Code 1.87.1 or equivalent
-* Python Interpreter - Python 3.8 or newer
+* Python Interpreter - Python 3.11 or newer
 
 ### Used Python Libraries:
 * Flask - [https://pypi.org/project/pytemp/](https://pypi.org/project/Flask/)
