@@ -2,12 +2,12 @@
 
 
 ### Description:
-This is my first attempt of a Single Page Application (SPA) using Flask Python Web Framework.
+This is my first attempt of a Single Page Application (SPA) using Python Flask Web Framework.
 
 
 ### System Requirements:
 * OS - Windows 7 or newer, Mac OS, Ubunto, Linux
-* IDE - PyCharm 2022.2 or equivalent
+* IDE - Visual Studio Code 1.87.1 or equivalent
 * Python Interpreter - Python 3.8 or newer
 
 ### Used Python Libraries:
@@ -21,12 +21,14 @@ This is my first attempt of a Single Page Application (SPA) using Flask Python W
 
 
 ### Preview:
-* Aplication overview:  <br>
+* Aplication overview - desktop version:  <br>
 
 ![Alt text](screenshots/desktop-screenshot.png)
-* Value type validation:  <br>
+* Aplication overview - mobile version - portrait:  <br>
+
 ![Alt text](screenshots/mobile-screenshot-portrait-chrome.jpg)
-* Output preview:  <br>
+* Aplication overview - mobile version - landscape:  <br>
+
 ![Alt text](screenshots/mobile-screenshot-landscape-firefox.jpg)
 
 
