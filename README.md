@@ -11,13 +11,13 @@ This is my first attempt of a Single Page Application (SPA) using Python Flask W
 * Python Interpreter - Python 3.11 or newer
 
 ### Used Python Libraries:
-* Flask - [https://pypi.org/project/pytemp/](https://pypi.org/project/Flask/)
+* Flask - [https://pypi.org/project/Flask/](https://pypi.org/project/Flask/)
 
 
 
 ### Final version source code:
 
-[https://github.com/mi6oo6im/my_python_training/blob/main/training_projects/tkinter_tempreture_measurement_converter/Temperature_scales_convertor_with_pytemp_final.py](https://github.com/mi6oo6im/flask_temperature_convertor_app_for_softuniada_2024/)
+[https://github.com/mi6oo6im/flask_temperature_convertor_app_for_softuniada_2024/](https://github.com/mi6oo6im/flask_temperature_convertor_app_for_softuniada_2024/)
 
 
 ### Preview:
@@ -33,8 +33,8 @@ This is my first attempt of a Single Page Application (SPA) using Python Flask W
 
 
 ### Demo:
-* Pythonanywhere.com:https://tconvert.eu.pythonanywhere.com/  <br>
+* Pythonanywhere.com: https://tconvert.eu.pythonanywhere.com/  <br>
 
 
 ### External sources:
-* QA https://www.rapidtables.com/convert/temperature/index.html
+* QA: https://www.rapidtables.com/convert/temperature/index.html
