@@ -42,7 +42,7 @@
 /* Tablets, Phablets */
 @media (max-width: 750px) {
     html {
-        font-size: 8px;
+        font-size: 6px;
     }
 
     body {
@@ -51,8 +51,8 @@
     }
 
     button {
-        min-width: 100px;
-        min-height: 100px;
+        min-width: 50px;
+        min-height: 50px;
     }
 
     svg {

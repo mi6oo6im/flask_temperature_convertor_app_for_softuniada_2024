@@ -1,60 +1,79 @@
+// Get all button elements
+
+// Calculate buttons:
+const calculateCelsiusButton = document.getElementById('celsius-button');
+const calculateFahrenheitButton = document.getElementById('fahrenheit-button');
+const calculateKelvinButton = document.getElementById('kelvin-button');
+
+// Calculate event listeners:
+calculateCelsiusButton.addEventListener('click', changeNumberFromCelsius);
+calculateFahrenheitButton.addEventListener('click', changeNumberFromFahrenheit);
+calculateKelvinButton.addEventListener('click', changeNumberFromKelvin);
+
+// Copy buttons:
+const copyCelsiusButton = document.getElementById('copy-celsius');
+const copyFahrenheitButton = document.getElementById('copy-fahrenheit');
+const copyKelvinButton = document.getElementById('copy-kelvin');
+
+// Copy event listeners:
+copyCelsiusButton.addEventListener('click', copyCelsiusToClipboard);
+copyFahrenheitButton.addEventListener('click', copyFahrenheitToClipboard);
+copyKelvinButton.addEventListener('click', copyKelvinToClipboard);
+
+// Get all input elements:
+const inputCelsiusElement = document.getElementById('celsius-value');
+const inputFahrenheitElement = document.getElementById('fahrenheit-value');
+const inputKelvinElement = document.getElementById('kelvin-value');
+
+// Select input element:
+inputCelsiusElement.addEventListener('focus', (e) => e.target.setSelectionRange(0, 99999));
+inputFahrenheitElement.addEventListener('focus', (e) => e.target.setSelectionRange(0, 99999));
+inputKelvinElement.addEventListener('focus', (e) => e.target.setSelectionRange(0, 99999));
+
+
+
 // Copy Celsius Value to Clipboard:
 function copyCelsiusToClipboard() {
-    // Get the text field
-    let copyText = document.getElementById("celsius-value");
-    
+
     // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
+    inputCelsiusElement.select();
+    inputCelsiusElement.setSelectionRange(0, 99999); // For mobile devices
     
     // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-    
-    // Alert the copied text
-    // alert("Copied value: " + copyText.value);
+    navigator.clipboard.writeText(inputCelsiusElement.value);
 }
 
 // Copy Fahrenheit value to Clipboard:
 
 function copyFahrenheitToClipboard() {
-    // Get the text field
-    let copyText = document.getElementById("fahrenheit-value");
-    
+
     // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
+    inputFahrenheitElement.select();
+    inputFahrenheitElement.setSelectionRange(0, 99999); // For mobile devices
     
     // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-    
-    // Alert the copied text
-    // alert("Copied value: " + copyText.value);
+    navigator.clipboard.writeText(inputFahrenheitElement.value);
 }
 
 // Copy Kelvin value to Clipboard:
 
 function copyKelvinToClipboard() {
-    // Get the text field
-    let copyText = document.getElementById("kelvin-value");
-    
+
     // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
+    inputKelvinElement.select();
+    inputKelvinElement.setSelectionRange(0, 99999); // For mobile devices
     
     // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-    
-    // Alert the copied text
-    // alert("Copied value: " + copyText.value);
+    navigator.clipboard.writeText(inputKelvinElement.value);
 }
 
 // Convert values from Celsius:
 
 function changeNumberFromCelsius(){
     // Get the element with id
-    let numberCelsius = document.getElementById("celsius-value");
-    let numberFahrenheit = document.getElementById("fahrenheit-value");
-    let numberKelvin = document.getElementById("kelvin-value");
+    let numberCelsius = inputCelsiusElement;
+    let numberFahrenheit = inputFahrenheitElement;
+    let numberKelvin = inputKelvinElement;
     
     // Change the content of the element
     // TODO decimal separator handling , and .
@@ -72,9 +91,9 @@ function changeNumberFromCelsius(){
 function changeNumberFromFahrenheit(){
     
     // Get the element with id
-    let numberCelsius = document.getElementById("celsius-value");
-    let numberFahrenheit = document.getElementById("fahrenheit-value");
-    let numberKelvin = document.getElementById("kelvin-value");
+    let numberCelsius = inputCelsiusElement;
+    let numberFahrenheit = inputFahrenheitElement;
+    let numberKelvin = inputKelvinElement;
     
     // Change the content of the element
     if (numberFahrenheit.value.includes(',')) {
@@ -90,9 +109,9 @@ function changeNumberFromFahrenheit(){
 
 function changeNumberFromKelvin(){
     // Get the element with id
-    let numberCelsius = document.getElementById("celsius-value");
-    let numberFahrenheit = document.getElementById("fahrenheit-value");
-    let numberKelvin = document.getElementById("kelvin-value");
+    let numberCelsius = inputCelsiusElement;
+    let numberFahrenheit = inputFahrenheitElement;
+    let numberKelvin = inputKelvinElement;
     
     // Change the content of the element
     if (numberKelvin.value.includes(',')) {
@@ -106,20 +125,18 @@ function changeNumberFromKelvin(){
 
 // Listeners for 'Enter' on input elements:
 // Get the input elements
-let inputElementCelsius = document.getElementById("celsius-value");
-let inputElementFahrenheit = document.getElementById("fahrenheit-value");
-let inputElementKelvin = document.getElementById("kelvin-value");
+let inputElementCelsius = inputCelsiusElement;
+let inputElementFahrenheit = inputFahrenheitElement;
+let inputElementKelvin = inputKelvinElement;
 
 //listener for celsius input:
 
 window.addEventListener("DOMContentLoaded", (event) => {
-    const element = document.getElementById('celsius-value');
+    const element = inputCelsiusElement;
     if (element) {
       element.addEventListener('keyup', function(event) {
         // Check if the pressed key is the Enter key
-        console.log('enter is pressed');
         if (event.key === 'Enter') {
-            // Call your function here
             changeNumberFromCelsius();
         }
     });
@@ -129,13 +146,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 // Listener for Fahrenheit input:
 
 window.addEventListener("DOMContentLoaded", (event) => {
-    const element = document.getElementById('fahrenheit-value');
+    const element = inputFahrenheitElement;
     if (element) {
       element.addEventListener('keyup', function(event) {
         // Check if the pressed key is the Enter key
-        console.log('enter is pressed');
         if (event.key === 'Enter') {
-            // Call your function here
             changeNumberFromFahrenheit();
         }
     });
@@ -145,13 +160,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 // Listener for Kelvin input:
 
 window.addEventListener("DOMContentLoaded", (event) => {
-    const element = document.getElementById('kelvin-value');
+    const element = inputKelvinElement;
     if (element) {
       element.addEventListener('keyup', function(event) {
         // Check if the pressed key is the Enter key
-        console.log('enter is pressed');
         if (event.key === 'Enter') {
-            // Call your function here
             changeNumberFromKelvin();
         }
     });
